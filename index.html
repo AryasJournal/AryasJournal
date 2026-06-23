@@ -214,22 +214,64 @@ footer{
 
 /* MOBILE */
 
-@media(max-width:768px){
+@media (max-width: 768px) {
 
-    .hero h1{
-        font-size:3rem;
+    nav {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 
-    .nav-links{
-        gap:15px;
-        font-size:14px;
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 14px;
     }
 
-    .section-title{
-        font-size:2.3rem;
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .profile-card,
+    .about-box,
+    .contact-box {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .profile-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skill {
+        font-size: 12px;
+        padding: 6px 10px;
     }
 }
-
 </style>
 </head>
 <body>
