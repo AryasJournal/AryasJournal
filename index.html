@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Arya's Journal</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --bg:#FAF6F0;
+    --card:#F2E9E1;
+    --accent:#C8A27A;
+    --text:#4A403A;
+    --secondary:#7D6E63;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    line-height:1.7;
+}
+
+/* NAVBAR */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(250,246,240,0.95);
+    backdrop-filter:blur(10px);
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    font-family:'Cormorant Garamond',serif;
+    font-size:2rem;
+    font-weight:700;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:var(--accent);
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.15rem;
+    color:var(--secondary);
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:var(--accent);
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* SECTION */
+
+section{
+    padding:100px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-family:'Cormorant Garamond',serif;
+    font-size:3rem;
+    margin-bottom:50px;
+}
+
+/* PROFILE */
+
+.profile-card{
+    max-width:900px;
+    margin:auto;
+    background:var(--card);
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+}
+
+.profile-img{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.profile-card h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:2.5rem;
+}
+
+.profile-card p{
+    color:var(--secondary);
+}
+
+.skills{
+    margin-top:25px;
+}
+
+.skill{
+    display:inline-block;
+    padding:8px 15px;
+    background:white;
+    margin:5px;
+    border-radius:20px;
+}
+
+/* ABOUT */
+
+.about-box{
+    max-width:900px;
+    margin:auto;
+    background:var(--card);
+    padding:40px;
+    border-radius:25px;
+}
+
+/* CONTACT */
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    background:var(--card);
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+}
+
+.contact-box a{
+    color:var(--text);
+    text-decoration:none;
+    font-weight:600;
+}
+
+.social-links{
+    margin-top:20px;
+}
+
+.social-links a{
+    display:block;
+    margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:var(--secondary);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .nav-links{
+        gap:15px;
+        font-size:14px;
+    }
+
+    .section-title{
+        font-size:2.3rem;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+    <div class="logo">Arya's Journal</div>
+<div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#journal">Journal</a>
+    <a href="#profile">Profile</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</div>
+
+    </nav>
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>Hi, I'm Arya 👋</h1>
+
+        <p>
+          
+
+Electrical & Computer Engineering Student
+</p>
+<p>
+
+Exploring the intersection of engineering,
+curiosity, and creativity—one project,
+one idea, and one lesson at a time.
+
+Welcome to my digital journal, where I document
+my journey through learning, building, and growing..
+        </p>
+
+        <a href="#profile" class="btn">
+            Explore My Journey
+        </a>
+
+    </div>
+
+</section>
+<section id="journal" style="padding:100px 8%;">
+
+<h1 style="
+font-family:'Cormorant Garamond',serif;
+font-size:3rem;
+text-align:center;
+margin-bottom:50px;
+color:#4A403A;
+">
+Journal Entries
+</h1>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+">
+
+    <!-- Blog Card 1 -->
+    <div style="
+    background:#F2E9E1;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    ">
+
+        <span style="
+        color:#7D6E63;
+        font-size:14px;
+        ">
+        June 2026
+        </span>
+
+        <h3 style="
+        margin:15px 0;
+        color:#4A403A;
+        ">
+        Why I Started Arya's Journal
+        </h3>
+
+        <p style="
+        color:#7D6E63;
+        line-height:1.7;
+        ">
+        A reflection on why I decided to document
+        my engineering journey and learning process.
+        </p>
+
+        <a href="firstpost.html"
+        style="
+        text-decoration:none;
+        color:#C8A27A;
+        font-weight:bold;
+        ">
+        Read Entry →
+        </a>
+
+    </div>
+
+    <!-- Blog Card 2 -->
+    <div style="
+    background:#F2E9E1;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    ">
+
+        <span style="
+        color:#7D6E63;
+        font-size:14px;
+        ">
+        July 2026
+        </span>
+
+        <h3 style="
+        margin:15px 0;
+        color:#4A403A;
+        ">
+        My First Month at CET
+        </h3>
+
+        <p style="
+        color:#7D6E63;
+        line-height:1.7;
+        ">
+        Thoughts, experiences and lessons from
+        the beginning of my engineering journey.
+        </p>
+
+        <a href="blogs/cet-month-one.html"
+        style="
+        text-decoration:none;
+        color:#C8A27A;
+        font-weight:bold;
+        ">
+        Read Entry →
+        </a>
+
+    </div>
+
+    <!-- Blog Card 3 -->
+    <div style="
+    background:#F2E9E1;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    ">
+
+        <span style="
+        color:#7D6E63;
+        font-size:14px;
+        ">
+        August 2026
+        </span>
+
+        <h3 style="
+        margin:15px 0;
+        color:#4A403A;
+        ">
+        Understanding COB LEDs
+        </h3>
+
+        <p style="
+        color:#7D6E63;
+        line-height:1.7;
+        ">
+        What I learned while researching high-power
+        LEDs and projection systems.
+        </p>
+
+        <a href="blogs/cob-led.html"
+        style="
+        text-decoration:none;
+        color:#C8A27A;
+        font-weight:bold;
+        ">
+        Read Entry →
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- PROFILE -->
+
+<section id="profile">
+
+<h1 class="section-title">Profile</h1>
+
+<div class="profile-card">
+
+    <!-- Replace with your image -->
+    <img src="profile.jpg" alt="Arya" class="profile-img">
+
+    <h2>Arya Lekshmi S</h2>
+
+    <p>
+        Electrical & Computer Engineering Student
+        <br>
+        College of Engineering Trivandrum (CET)
+    </p>
+<br>
+
+<h3>My Journey</h3>
+
+<div class="timeline">
+
+    <div class="timeline-item">
+        <strong>2025</strong>
+        <p>Started B.Tech at CET</p>
+    </div>
+
+    <div class="timeline-item">
+        <strong>2026</strong>
+        <p>Joined AstroCET</p>
+    </div>
+
+    <div class="timeline-item">
+        <strong>2026</strong>
+        <p>Joined IEDC CET</p>
+    </div>
+
+    <div class="timeline-item">
+        <strong>2026</strong>
+        <p>Started Arya's Journal</p>
+    </div>
+
+    <div class="timeline-item">
+        <strong>Future</strong>
+        <p>Building impactful engineering projects</p>
+    </div>
+
+</div>
+
+<br>
+
+    <div class="skills">
+
+        <span class="skill">Python</span>
+        <span class="skill">C Programming</span>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">Tinkercad</span>
+        <span class="skill">Electrical Engineering</span>
+        <span class="skill">Astronomy</span>
+
+    </div>
+
+    <br>
+
+    <p>
+        Member of AstroCET, IEDC CET and SCORE@CET.
+        Passionate about engineering, innovation,
+        space technology and lifelong learning.
+    </p>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h1 class="section-title">About</h1>
+
+<div class="about-box">
+
+<p>
+
+Welcome to my digital journal.
+
+<br><br>
+
+I created this space to document my journey as an engineering student,
+share my thoughts, record lessons learned, and showcase projects that inspire me.
+
+<br><br>
+
+This blog isn't about being an expert. It's about learning publicly,
+experimenting, making mistakes, improving, and growing one step at a time.
+
+<br><br>
+
+Through engineering, creativity and curiosity,
+I hope to build meaningful projects and connect with people who enjoy learning as much as I do.
+This journal is my digital notebook—a place where I document projects, lessons, ideas, and the small moments that shape my engineering journey.I don’t claim to know everything. Instead, I choose to learn openly, build consistently, and share the process along the way.
+Every project, every mistake, and every discovery adds another page to this story.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h1 class="section-title">Contact</h1>
+
+<div class="contact-box">
+
+<h3>Let's Connect 🌿</h3>
+
+<br>
+
+<p>
+📧 aryalekshmis2006@gmail.com
+</p>
+
+<div class="social-links">
+
+<a href="https://www.linkedin.com/in/arya-lekshmi-s-64b8823a6" target="_blank">
+💼 LinkedIn
+</a>
+
+<a href="https://instagram.com/arya_.lekshmii" target="_blank">
+📸 @arya_.lekshmii
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Arya's Journal • Engineering • Passionate • Learning
+
+</footer>
+
+</body>
+</html>
